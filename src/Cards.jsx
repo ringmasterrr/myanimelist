@@ -1,6 +1,6 @@
-import React from 'react';
-import './index.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./index.css";
+import { Link } from "react-router-dom";
 
 function Cards(props) {
   const handleDelete = () => {
@@ -8,15 +8,23 @@ function Cards(props) {
   };
 
   return (
-    <div className="card">
+    <div className="card max-w-[370px]">
       <div>
-        <img src={props.imgsrc} alt="anime" />
-        <div>
-         <Link to = {`/anime/${props.id}`}> <h3>{props.sname}</h3> </Link>
-          <a href={props.link}>
-            <button>Watch Now</button>
-          </a>
-          <button onClick={handleDelete}>Delete</button>
+        <Link to={`/anime/${props.id}`}>
+          {" "}
+          <img src={props.imgsrc} alt="anime" />{" "}
+        </Link>
+        <div >
+          <Link to={`/anime/${props.id}`}>
+            {" "}
+            <h3>{props.sname}</h3>{" "}
+          </Link>
+          <div className="buttonBox">
+            <a className="cardButton" href={props.link}>
+              Watch Now
+            </a>
+            <button className="cardButton" onClick={handleDelete}>Delete</button>
+          </div>
         </div>
       </div>
     </div>

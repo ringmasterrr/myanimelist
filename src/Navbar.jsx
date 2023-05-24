@@ -4,8 +4,8 @@ import './index.css';
 
 function Navbar() {
   return (
-    <nav>
-      <span className="logo">My Anime List</span>
+    <nav className='px-8 py-4 shadow'>
+      <span className="logo">☮ My Anime List</span>
       <ul className="menu">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/add">Add Anime +</Link></li>

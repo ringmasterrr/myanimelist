@@ -22,17 +22,19 @@ function AnimePage({ anime , setCards}) {
   return (
     <div>
       {" "}
-      <main className="card" >
+      <div>
         {animeItem ? (
-          <>
-            <img src={animeItem.imgsrc} style={{ objectFit:"cover" }} alt="anime" />
+          <div className="animecard">
+            <img src={animeItem.imgsrc}  alt="anime" />
             <h1>{animeItem.sname}</h1>
             <button onClick={deleteCard}>Delete</button>
-          </>
+            
+          </div>
         ) : (
           "Loading"
         )}
-      </main>{" "}
+      </div>
+      {" "}
     </div>
   );
 }

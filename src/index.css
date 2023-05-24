@@ -5,38 +5,122 @@
 
 
 body {
-  background-color: #DDE6ED;
+  background-color: #252525;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: medium;
+  color: #fff;
 }
+
+.page{
+
+  padding-top: 2rem;
+}
+
 
 .card {
-  background-color: #526D82;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 20px;
+  background-color: #070707;
+  padding: 20px;
   border-radius: 0;
-  box-shadow: 5px 10px #27374D;;
-  width: 80%;
+  box-shadow: 0 5px 8px rgb(0, 0, 0);
+  /* box-shadow: 5px 10px rgb(39, 55, 77 / 0.3);; */
+  border-radius: 16px;
+  transition: transform 0.3s ease;
 }
-
 .card img {
   width: 100%;
-  height: auto;
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .card h3 {
   margin-top: 10px;
   margin-bottom: 5px;
   color: #fff;
+  text-align: center;
 }
+
+.buttonBox{
+
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+
+}
+.cardButton {
+  padding: 10px 20px;
+  background-color: #252525;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animecard {
+  background-color: #070707;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 0;
+  box-shadow: 0 5px 8px rgb(0, 0, 0);
+  /* box-shadow: 5px 10px rgb(39, 55, 77 / 0.3);; */
+  width: 50%;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.animecard img{
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 3px;
+  
+}
+.animecard:hover,
+.animecard:focus,
+.animecard:active {
+  transform: scale(0.95);
+}
+.card:hover,
+.card:focus,
+.card:active {
+  transform: scale(0.95);
+}
+.animecard h1 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.animecard button {
+  padding: 10px 20px;
+  background-color: #252525;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 3px;
+  width: 20%;
+  margin-left: auto;
+}
+
+
 
 button {
   padding: 10px 20px;
-  background-color: #BB8082;
+  background-color: #252525;
   color: #fff;
   border: none;
-  border-radius: 0;
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -45,15 +129,15 @@ button:hover {
 }
 
 nav {
-  background-color: #27374D;
+  background-color: #070707;
   color: #ffffff;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
+  /* box-shadow: 5px 5px 5px 5px rgb(0, 0, 0); */
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -72,8 +156,8 @@ nav {
 .menu a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px; 
-  padding: 10px 20px; 
+  font-size: 18px; 
+  padding: 15px 20px; 
 }
 
 .menu a:hover {
@@ -87,28 +171,30 @@ nav {
 }
 
 .card-form {
-  background-color: #526D82;
-  padding: 20px;
-  max-width: 400px;
-  
+  background-color: rgb(07, 07, 07);
+  padding: 25px 25px 25px 25px;
+  max-width: 650px;
   margin: 0 auto;
+  margin-top: 2%;
+  box-shadow: 0 10px 10px rgb(0, 0, 0);
 }
 
 .card-form-input {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
   border: 1px solid #6E7582;
   font-size: 16px;
   background-color: #DDE6ED;
+
 }
 
 .card-form-button {
   display: block;
   width: 100%;
-  padding: 10px;
-  background-color: #BB8082;
+  padding: 20px;
+  background-color: #252525;
   color: #fff;
   border: none;
   font-size: 16px;
@@ -129,7 +215,8 @@ nav {
 }
 
 .add-card-page-title {
-  margin-top: 0;
+  margin: 6%;
   font-size: xx-large;
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
 }

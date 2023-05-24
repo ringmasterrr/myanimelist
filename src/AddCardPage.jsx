@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CardForm from './CardForm';
 import './index.css'; 
 
@@ -9,7 +9,6 @@ function AddCardPage({ onAddCard }) {
 
   return (
     <div className="add-card-page">
-      <h1 className="add-card-page-title">Add A New Anime</h1>
       <CardForm onAddCard={handleAddCard} />
     </div>
   );

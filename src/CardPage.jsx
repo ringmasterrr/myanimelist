@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Cards from './Cards';
 import CardForm from './CardForm';
 
@@ -6,13 +6,13 @@ import CardForm from './CardForm';
 function CardPage({cards,setCards}) {
 
   const addCard = (newCard) => {
-    // Generate a unique ID for the new card
+ 
     const newId = Math.floor(Math.random() * 100000);
     
-    // Create a copy of the current cards array and add the new card with the generated ID
+  
     const updatedCards = [...cards, { ...newCard, id: newId }];
     
-    // Update the state with the updated cards array
+ 
     setCards(updatedCards);
   };
 
@@ -22,9 +22,9 @@ function CardPage({cards,setCards}) {
   };
 
   return (
-    <div>
-     {/* <CardForm onAddCard={addCard} /> */}
-      <div className="grid grid-cols-4 gap-4">
+    <div className='p-8 pt-14'>
+  
+      <div className="grid grid-cols-4 gap-12 justify-center w-fit mx-auto">
         {cards.map((card) => (
           <Cards
             key={card.id}

@@ -6,7 +6,6 @@ import CardPage from './CardPage';
 import AddCardPage from './AddCardPage';
 import Data from './Data';
 import AnimePage from './AnimePage';
-// import Cards from './Cards';
 
 function App() {
   const [cards, setCards] = useState(Data);

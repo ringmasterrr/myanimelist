@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
-import './index.css'; 
+import React, { useState } from "react";
+import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 function CardForm({ onAddCard }) {
-  const [newCard, setNewCard] = useState({ imgsrc: '', sname: '', link: '' });
+  const [newCard, setNewCard] = useState({ imgsrc: "", sname: "", link: "" });
+
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
     setNewCard({ ...newCard, [event.target.name]: event.target.value });
@@ -10,12 +13,15 @@ function CardForm({ onAddCard }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onAddCard({...newCard,id: Math.floor(Math.random()*1000)});
-    setNewCard({ imgsrc: '', sname: '', link: '' });
+    onAddCard({ ...newCard, id: Math.floor(Math.random() * 1000) });
+    setNewCard({ imgsrc: "", sname: "", link: "" });
+  navigate("/")
+
   };
 
   return (
     <form className="card-form" onSubmit={handleSubmit}>
+      <h1 className="add-card-page-title">֍ Add A New Anime To The List ֍</h1>
       <input
         type="text"
         name="imgsrc"
@@ -40,7 +46,9 @@ function CardForm({ onAddCard }) {
         placeholder="Link"
         className="card-form-input"
       />
-      <button type="submit" className="card-form-button">Add Card</button>
+      <button type="submit" className="card-form-button">
+        Add Card
+      </button>
     </form>
   );
 }
