@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background-color: #DDE6ED;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.card {
+  background-color: #526D82;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 0;
+  box-shadow: 5px 10px #27374D;;
+  width: 80%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #BB8082;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+nav {
+  background-color: #27374D;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px; 
+  padding: 10px 20px; 
+}
+
+.menu a:hover {
+  color: #ffffff;
+  background-color: #d32f2f;
+}
+
+.menu a:active {
+  color: #ffffff;
+  background-color: #d32f2f;
+}
+
+.card-form {
+  background-color: #526D82;
+  padding: 20px;
+  max-width: 400px;
+  
+  margin: 0 auto;
+}
+
+.card-form-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #6E7582;
+  font-size: 16px;
+  background-color: #DDE6ED;
+}
+
+.card-form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #BB8082;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-form-button:hover {
+  background-color: #d32f2f;
+}
+
+.card-form-button:active {
+  background-color: #d32f2f;
+}
+.add-card-page {
+  text-align: center;
+  padding: 10px  ;
+  font-size: xx-large;
+}
+
+.add-card-page-title {
+  margin-top: 0;
+  font-size: xx-large;
+  font-family: 'Josefin Sans', sans-serif;
+}
